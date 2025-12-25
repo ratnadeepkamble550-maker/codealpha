@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Translation Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 40px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    select, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+    #output {
+      margin-top: 15px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🌍 Language Translation Tool</h2>
+
+  <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+
+  <br>
+
+  <label>From:</label>
+  <select id="sourceLang">
+    <option value="en">English</option>
+    <option value="fr">French</option>
+    <option value="es">Spanish</option>
+    <option value="de">German</option>
+  </select>
+
+  <label>To:</label>
+  <select id="targetLang">
+    <option value="fr">French</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+    <option value="de">German</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="translateText()">Translate</button>
+  <button onclick="copyText()">Copy</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
